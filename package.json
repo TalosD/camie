@@ -4,10 +4,11 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
+    "lint": "nx lint",
+    "test": "nx test",
     "build": "nx build --base-href /camie/",
     "deploy:camie-riu-esate": "ngh --dir=dist/camie-riu-estate/browser",
-    "test": "nx test",
-    "deploy": "npm-run-all test build deploy:*"
+    "deploy": "npm-run-all lint test build deploy:*"
   },
   "private": true,
   "dependencies": {
