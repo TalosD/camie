@@ -8,12 +8,8 @@
     "test": "nx test",
     "build": "nx build --base-href /camie/",
     "deploy:camie-riu-esate": "ngh --dir=dist/camie-riu-estate/browser",
-    "deploy": "npm-run-all lint test build deploy:*"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run deploy"
-    }
+    "deploy": "npm-run-all lint test build deploy:*",
+    "prepare": "husky"
   },
   "private": true,
   "dependencies": {
