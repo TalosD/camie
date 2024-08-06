@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { HomeComponent } from '../lib/home';
+import { HomeComponent } from '../lib';
 
 @Component({
   standalone: true,
